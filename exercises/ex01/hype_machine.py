@@ -1,5 +1,7 @@
 """DESCRIPTION OF PROGRAM HERE"""
 
-__author__: str = "YOUR PID HERE"
+__author__: str = "730429363"
 
-# Your solution starts here...
+name: str = input("What is your name?")
+print("You entered: ")
+print(name)
