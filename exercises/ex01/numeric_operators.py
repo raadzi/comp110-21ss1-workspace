@@ -7,5 +7,5 @@ l: str = input("Left-hand side: ")
 r: int
 r: str = input("Right-hand side: ")
 a: int
-a = input(l * r)
+a = l * r
 print(l + " ** " + r + "is" + a)
