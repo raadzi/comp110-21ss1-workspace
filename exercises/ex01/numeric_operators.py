@@ -2,9 +2,8 @@
 
 __author__: str = "730429363"
 
-left = input("Left-hand side: ")
-left: int = int(left)
-right:int = int(input("Right-hand side: "))
+left: int = int(input("Left-hand side: "))
+right: int = int(input("Right-hand side: "))
 print(str(left) + " ** " + str(right) + " is " + str(left ** right))
 print(str(left) + " / " + str(right) + " is " + str(left / right))
 print(str(left) + " // " + str(right) + " is " + str(left // right))
