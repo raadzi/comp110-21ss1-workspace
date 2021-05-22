@@ -6,4 +6,6 @@ l: int
 l: str = input("Left-hand side: ")
 r: int
 r: str = input("Right-hand side: ")
-print(l + " ** " + r + "is" + str(l ** r))
+a: int
+a: str = l ** r
+print(l + " ** " + r + "is" + a)
