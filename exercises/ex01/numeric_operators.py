@@ -4,8 +4,7 @@ __author__: str = "730429363"
 
 left = input("Left-hand side: ")
 left: int = int(left)
-right = input("Right-hand side: ")
-right: int = int(right)
+right:int = int(input("Right-hand side: "))
 print(str(left) + " ** " + str(right) + " is " + str(left ** right))
 print(str(left) + " / " + str(right) + " is " + str(left / right))
 print(str(left) + " // " + str(right) + " is " + str(left // right))
