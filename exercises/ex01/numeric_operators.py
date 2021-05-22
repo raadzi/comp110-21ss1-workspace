@@ -1,4 +1,4 @@
-"""DESCRIPTION OF PROGRAM HERE"""
+"""Shows the output of integers entered in python's numeric operators"""
 
 __author__: str = "730429363"
 
