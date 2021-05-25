@@ -25,4 +25,5 @@ vaccinations_remaining: float = float((target_vaccinated * population / 100) - (
 days_remaining: int = round(2 * vaccinations_remaining / float(per_day))
 today: datetime = datetime.today()
 day_target_reached: datetime = today + timedelta(days_remaining)
+print(day_target_reached.strftime("%B %d, %Y"))
 print("We will reach " + str(target_vaccinated) + "% vaccination in " + str(days_remaining) + " days, which falls on " + str(print(day_target_reached.strftime("%B %d, %Y"))) + ".")
