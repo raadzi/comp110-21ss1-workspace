@@ -1,6 +1,6 @@
 """A vaccination calculator."""
 
-__author__ = 730429363
+__author__ = "730429363"
 
 # The datetime data type is imported from the datetime library.
 # A datetime object models a specific date and time.
