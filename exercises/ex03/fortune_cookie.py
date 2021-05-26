@@ -15,7 +15,7 @@ from random import randint
 print("Your fortune cookie says...")
 number: int = int(randint(1, 4))
 if number <= 2:
-    if number ==1:
+    if number == 1:
         print("You will take many nice naps this week.")
     else:
         print("Both sides of your pillow will be cold for the next month.")
