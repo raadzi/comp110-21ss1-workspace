@@ -1,17 +1,16 @@
 """An exercise in remainders and boolean logic."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730429363"
 
 
 number: int = input("Enter an int: ")
-if number > 2:
-    if number !=1:
-        print("You will take many nice naps this week.")
+if number % 2 == 0:
+    if number % 7 == 0:
+        print("TAR HEELS")
     else:
-        print("Both sides of your pillow will be cold for the next month.")
+        print("TAR")
 else:
-    if number < 2:
-        print("You will succeed in Comp 110.")
+    if number % 7 == 0:
+        print("HEELS")
     else:
-        print("You will have a very slow day at work tomorrow, and no one will yell at you.")
-print("Now, go spread positive vibes!")
+        print("CAROLINA")
