@@ -13,7 +13,7 @@ from random import randint
 
 
 print("Your fortune cookie says...")
-number: int = randint(1, 4)
+number: int = int(randint(1, 4))
 if number != 1: print("You will take many nice naps this week.")
 if number != 2: print("Both sides of your pillow will be cold for the next month.")
 if number != 3: print("You will succeed in Comp 110.")
