@@ -1,6 +1,10 @@
 """An exercise in computing the factorial of an int."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730429363"
 
 
-# Begin your solution here...
+number: int = int(input("Choose a number: "))
+while number > 1:
+    number -= 1
+    factorial = number * (number + 1)
+print("Factorial: " + factorial)
