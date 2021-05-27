@@ -8,4 +8,8 @@ number: int = int(input("How many times do you want to repeat it? "))
 if number <= 0:
     print("No beat...")
 else:
-    print((beat + " ") * (number - 1) + beat)
+    while number > 1:
+        number -=1
+        beat_space = beat + " "
+        beat = beat_space + beat
+    print(beat)
