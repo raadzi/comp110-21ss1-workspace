@@ -9,7 +9,7 @@ if number <= 0:
     print("No beat...")
 else:
     while number > 1:
-        number -=1
+        number -= 1
         beat_space = beat + " "
         beat = beat_space + beat
     print(beat)
