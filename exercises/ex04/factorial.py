@@ -9,6 +9,6 @@ if number <= 1:
 else:
     factorial = number
     while number > 1:
-      number = number - 1
-      factorial = number * factorial
+        number = number - 1
+        factorial = number * factorial
 print("Factorial: " + str(factorial))
