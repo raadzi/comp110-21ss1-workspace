@@ -9,8 +9,7 @@ def main() -> None:
     print(tar_heels())
     return None
 
-
-def tar_heels(number: int) -> str:
+def tar_heels(main.number: int) -> str:
     if number % 2 == 0:
         if number % 7 == 0:
             return "TAR HEELS"
