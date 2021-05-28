@@ -10,6 +10,7 @@ def main() -> None:
     print("Your fortune cookie says...")
     print(fortune_cookie())
     print("Now, go spread positive vibes!")
+    return None
 
 def fortune_cookie() -> str:
     number: int = int(randint(1, 4))
