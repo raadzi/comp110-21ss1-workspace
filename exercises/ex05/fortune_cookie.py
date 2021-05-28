@@ -14,6 +14,7 @@ def main() -> None:
 
 
 def fortune_cookie() -> str:
+    """Determines the fortune you will recieve."""
     number: int = int(randint(1, 4))
     if number <= 2:
         if number == 1:

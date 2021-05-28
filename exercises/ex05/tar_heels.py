@@ -11,6 +11,7 @@ def main() -> None:
 
 
 def tar_heels(number: int) -> str:
+    """Dertermines str output you recieve based on coice input."""
     if number % 2 == 0:
         if number % 7 == 0:
             return "TAR HEELS"
