@@ -10,7 +10,7 @@ def main() -> None:
     return None
 
 
-def tar_heels() -> str:
+def tar_heels(number) -> str:
     if number % 2 == 0:
         if number % 7 == 0:
             return "TAR HEELS"
