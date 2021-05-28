@@ -2,7 +2,7 @@
 
 from random import randint
 
-__author__ = "YOUR 9-DIGIT PID"
+__author__ = "730429363"
 
 
 def main() -> None:
@@ -12,7 +12,20 @@ def main() -> None:
     print("Now, go spread positive vibes!")
 
 
-# TODO 1: Define your fortune_cookie function here.
+def fortune_cookie -> str:
+    print("Your fortune cookie says...")
+    number: int = int(randint(1, 4))
+    if number <= 2:
+        if number == 1:
+            print("You will take many nice naps this week.")
+        else:
+            print("Both sides of your pillow will be cold for the next month.")
+    else:
+        if number != 4:
+            print("You will succeed in Comp 110.")
+        else:
+            print("You will have a very slow day at work tomorrow, and no one will yell at you.")
+    print("Now, go spread positive vibes!")
 
 
 # Python Idiom for "starting" the program when run as a module.
