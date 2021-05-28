@@ -10,15 +10,14 @@ def main() -> None:
     print(tar_heels())
     return None
 
-def tar_heels(number: int) -> str:
-    number == choice
-    if number % 2 == 0:
-        if number % 7 == 0:
+def tar_heels(choice: int) -> str:
+    if choice % 2 == 0:
+        if choice % 7 == 0:
             return "TAR HEELS"
         else:
             return "TAR"
     else:
-        if number % 7 == 0:
+        if choice % 7 == 0:
             return "HEELS"
         else:
             return "CAROLINA"
