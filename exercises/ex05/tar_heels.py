@@ -6,6 +6,7 @@ __author__ = "730429363"
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
     choice: int = int(input("Enter an int: "))
+    tar_heels(choice)
     print(tar_heels())
     return None
 
