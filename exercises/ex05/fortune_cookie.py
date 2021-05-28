@@ -12,6 +12,7 @@ def main() -> None:
     print("Now, go spread positive vibes!")
     return None
 
+
 def fortune_cookie() -> str:
     number: int = int(randint(1, 4))
     if number <= 2:
@@ -24,6 +25,7 @@ def fortune_cookie() -> str:
             return "You will succeed in Comp 110."
         else:
             return "You will have a very slow day at work tomorrow, and no one will yell at you."   
+
 
 # Python Idiom for "starting" the program when run as a module.
 # The special dunder variable __name__ will be "__main__" when run as module. 
