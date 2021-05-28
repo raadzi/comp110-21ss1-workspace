@@ -12,7 +12,7 @@ def main() -> None:
     print("Now, go spread positive vibes!")
 
 
-def fortune_cookie -> str:
+def fortune_cookie() -> str:
     print("Your fortune cookie says...")
     number: int = int(randint(1, 4))
     if number <= 2:
