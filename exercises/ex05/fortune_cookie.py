@@ -5,26 +5,24 @@ from random import randint
 __author__ = "730429363"
 
 
-def fortune_cookie() -> str:
-    number: int = int(randint(1, 4))
-    if number <= 2:
-        if number == 1:
-            str("You will take many nice naps this week.")
-        else:
-            str("Both sides of your pillow will be cold for the next month.")
-    else:
-        if number != 4:
-            str("You will succeed in Comp 110.")
-        else:
-            str("You will have a very slow day at work tomorrow, and no one will yell at you.")
-
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
     print("Your fortune cookie says...")
     print(fortune_cookie())
     print("Now, go spread positive vibes!")
 
-   
+def fortune_cookie() -> str:
+    number: int = int(randint(1, 4))
+    if number <= 2:
+        if number == 1:
+            "You will take many nice naps this week."
+        else:
+            "Both sides of your pillow will be cold for the next month."
+    else:
+        if number != 4:
+            "You will succeed in Comp 110."
+        else:
+            "You will have a very slow day at work tomorrow, and no one will yell at you."   
 
 # Python Idiom for "starting" the program when run as a module.
 # The special dunder variable __name__ will be "__main__" when run as module. 
