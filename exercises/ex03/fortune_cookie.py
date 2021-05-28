@@ -12,6 +12,12 @@ __author__ = "730429363"
 from random import randint
 
 
+x = 67
+if x > 50:
+    print("D")
+elif x > 60:
+    print("G")
+
 print("Your fortune cookie says...")
 number: int = int(randint(1, 4))
 if number <= 2:
