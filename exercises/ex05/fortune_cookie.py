@@ -13,20 +13,18 @@ def main() -> None:
 
 
 def fortune_cookie() -> str:
-    print("Your fortune cookie says...")
     number: int = int(randint(1, 4))
     if number <= 2:
         if number == 1:
-            print("You will take many nice naps this week.")
+            fortune = str("You will take many nice naps this week.")
         else:
-            print("Both sides of your pillow will be cold for the next month.")
+            fortune = str("Both sides of your pillow will be cold for the next month.")
     else:
         if number != 4:
-            print("You will succeed in Comp 110.")
+            fortune = str("You will succeed in Comp 110.")
         else:
-            print("You will have a very slow day at work tomorrow, and no one will yell at you.")
-    print("Now, go spread positive vibes!")
-
+            fortune = str("You will have a very slow day at work tomorrow, and no one will yell at you.")
+   
 
 # Python Idiom for "starting" the program when run as a module.
 # The special dunder variable __name__ will be "__main__" when run as module. 
