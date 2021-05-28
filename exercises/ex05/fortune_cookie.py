@@ -5,13 +5,6 @@ from random import randint
 __author__ = "730429363"
 
 
-def main() -> None:
-    """The entrypoint of the program, when run as a module."""
-    print("Your fortune cookie says...")
-    print(fortune_cookie())
-    print("Now, go spread positive vibes!")
-
-
 def fortune_cookie() -> str:
     number: int = int(randint(1, 4))
     if number <= 2:
@@ -24,6 +17,13 @@ def fortune_cookie() -> str:
             str("You will succeed in Comp 110.")
         else:
             str("You will have a very slow day at work tomorrow, and no one will yell at you.")
+
+def main() -> None:
+    """The entrypoint of the program, when run as a module."""
+    print("Your fortune cookie says...")
+    print(fortune_cookie())
+    print("Now, go spread positive vibes!")
+
    
 
 # Python Idiom for "starting" the program when run as a module.
