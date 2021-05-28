@@ -5,11 +5,12 @@ __author__ = "730429363"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    number: int = int(input("Enter an int: "))
+    choice: int = int(input("Enter an int: "))
     print(tar_heels())
     return None
 
-def tar_heels(main.number: int) -> str:
+def tar_heels(number: int) -> str:
+    number == choice
     if number % 2 == 0:
         if number % 7 == 0:
             return "TAR HEELS"
