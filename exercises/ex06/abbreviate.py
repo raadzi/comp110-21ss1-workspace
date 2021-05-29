@@ -14,7 +14,7 @@ def abbreviate(text: str) -> str:
     position = 0
     while position <= len(text):
         position += 1 
-        if text[position].isupper:
+        if text[position].isupper():
             return text[position]
 
 
