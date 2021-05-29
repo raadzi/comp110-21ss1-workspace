@@ -12,10 +12,12 @@ def main() -> None:
 
 def abbreviate(text: str) -> str:
     position = -1
+    abbreviation = str()
     while position <= len(text):
         position += 1 
         if text[position].isupper():
-            return text[position]
+            abbreviation = abbreviation + text[position]
+    return str(abbreviation)
 
 
 if __name__ == "__main__":
