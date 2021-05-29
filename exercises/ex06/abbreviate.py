@@ -11,7 +11,7 @@ def main() -> None:
 
 
 def abbreviate(text: str) -> str:
-    position = int(-1)
+    position = 0
     abbreviation = ""
     while position <= len(text):
         position += 1 
