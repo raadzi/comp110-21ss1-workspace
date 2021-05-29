@@ -12,7 +12,6 @@ def main() -> None:
 
 def abbreviate(text: str) -> str:
     position = -1
-    abbreviation = str()
     while position <= len(text):
         position += 1 
         if text[position].isupper():
