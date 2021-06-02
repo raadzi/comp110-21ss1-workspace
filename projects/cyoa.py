@@ -8,6 +8,7 @@ __author__ = "730429363"
 
 points: int = 0
 player: str = "y/n"
+SMILE = "\U0001F600"	
 
 
 def main() -> None:
@@ -41,7 +42,7 @@ def main() -> None:
 
 def greet() -> None:
     """Function to greet the player and begin their adventure."""
-    print("Hello! Welcome to the Kevin G dating simulator! This hurts me more than it hurts you :)")
+    print("Hello! Welcome to the Kevin G dating simulator! This hurts me more than it hurts you {SMILE}")
     global player
     player = str(input("What is your name? "))
     return None
