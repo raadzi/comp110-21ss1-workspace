@@ -16,27 +16,36 @@ def main() -> None:
     """The entrypoint of the program, when run as a module."""
     greet()
     global points
-    print(f"Hello, {player}! It is a sunny day, and you've just finished watching today's Comp 110 lecture.")
-    print("You're excited to get started on your homework for the day, but you decide to check your email first.")
-    print("You open your inbox and see a message from none other than your university's chancellor himself!")
-    print("You read the email and see that Kevin wants to go on a date with you! You... ")
-    print("a) Respond to the email saying that you do not want to date Kevin. This choice ends the dating simulation.")
-    print("b) Ignore Kevin's email.")
-    print("c) Excitedly let Kevin know that you'd love to go on a date with him!")
-    choice: str = str(input("What do you do? "))
-    if choice == "a":
-        points += 1
-        print(f"Understandable. I would do the same. Your Kevin Points are {points}.")
-    elif choice == "b":
-        print("Honestly, same. Responding to emails is so laborsome.")
-        points += 2
-        ignore_email()
-        print(f"Your Kevin Points are {points}.")
-    else:
-        points += 5
-        points = respond_email(points)
-        restaurant()
-        print(f"Your Kevin Points are {points}.")
+    while points >= 0
+        print(f"Hello, {player}! It is a sunny day, and you've just finished watching today's Comp 110 lecture.")
+        print("You're excited to get started on your homework for the day, but you decide to check your email first.")
+        print("You open your inbox and see a message from none other than your university's chancellor himself!")
+        print("You read the email and see that Kevin wants to go on a date with you! You... ")
+        print("a) Respond to the email saying that you do not want to date Kevin. This choice ends the dating simulation.")
+        print("b) Ignore Kevin's email.")
+        print("c) Excitedly let Kevin know that you'd love to go on a date with him!")
+        choice: str = str(input("What do you do? "))
+        if choice == "a":
+            points += 1
+            print(f"Understandable. I would do the same. Your Kevin Points are {points}.")
+        elif choice == "b":
+            print("Honestly, same. Responding to emails is so laborsome.")
+            points += 2
+            ignore_email()
+            print(f"Your Kevin Points are {points}.")
+        else:
+            points += 5
+            points = respond_email(points)
+            restaurant()
+            print(f"Your Kevin Points are {points}.")
+        print("Would you like to play again?")
+        print("a) yes")
+        print("b) no")
+        play_again: str = str(input("Answer: "))
+        if play_again == "b":
+            points == -1
+        else:
+            points == 0
     return None
 
 
@@ -138,6 +147,7 @@ def geckos_name() -> str:
             return "The gecko's name is Turnip."
         else:
             return "The gecko's name is Walter."
+
 
 if __name__ == "__main__":
     main()
