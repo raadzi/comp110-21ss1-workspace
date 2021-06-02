@@ -66,6 +66,7 @@ def ignore_email() -> None:
         print("Anyways... along with the dating sim!")
         points += 2
         points = int(respond_email(points))
+        restaurant()
     return None
 
 
@@ -79,11 +80,9 @@ def respond_email(number: int) -> int:
     print("b) Panera")
     choice: str = str(input("Which restaurant do you choose? "))
     if choice == "a":
-        number += 1
-        restaurant()
+        number += 1  
     else:
         number += 3
-        restaurant()
     return int(number)
 
 
