@@ -33,16 +33,40 @@ def begin_adventure() -> int:
     print("c) Excitedly let Kevin know that you'd love to go on a date with him!")
     choice: str = str(input("What do you do? "))
     if choice == "a":
+        points += 1
         print("Understandable. I would do the same. Your Kevin Points are " + str(points) + ".")
     elif choice == "b":
         print("Honestly, same. Responding to emails is so laborsome.")
-        points += 1
+        points += 2
         ignore_email()
     else:
         print("Bestie... are you okay? Did you take your meds today? I really hope you selected this one for the meme.")
-        points += 2
+        points += 5
         respond_email()
     return int(points)
+
+
+def ignore_email() -> None:
+    global points
+    print("After a day, Kevin emails you yet again. The email says...")
+    print("\"" + player + ",")
+    print("It appears that you did not recieve my first email. Would you like to go on a date?")
+    print("You...")
+    print("a) Tell him to stop bothering you. You're not interested.")
+    print("b) Tell him that you accept the invite, but only because he's annoying you.")
+    choice: str = str(input("What do you do? "))
+    if choice == "a":
+        points += 1
+        print("As you should. Men are gross anyways. Your Kevin Points are " + str(points) + ".")
+    else:
+        print("Okay, but please know that you shouldn't say yes to men just because they're bothering you.")
+        print("It is important that you stand your ground, no matter how much men pester you.")
+        points += 2
+        respond_email()
+    return None
+
+
+def respond_email(points: int) -> int:
 
 
 if __name__ == "__main__":
