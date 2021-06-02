@@ -34,7 +34,7 @@ def main() -> None:
         print(f"Your Kevin Points are {points}.")
     else:
         points += 5
-        points = int(respond_email(points))
+        points: int = respond_email(points)
         print(f"Your Kevin Points are {points}.")
     return None
 
