@@ -1,4 +1,6 @@
 """A choose your own adventure experience in which you date kevin g."""
+"""Idk why this got so long."""
+"""Okay I finished, I deeply apologize."""
 
 __author__ = "730429363"
 
@@ -27,7 +29,8 @@ def main() -> None:
         points += 2
         ignore_email()
     else:
-        print("Bestie... are you okay? Did you take your meds today? I really hope you selected this one for the meme.")
+        print("Bestie... are you okay? Did you take your meds today?")
+        print("I really hope you selected this one for the meme.")
         points += 5
         respond_email(points)
     return None
@@ -42,10 +45,11 @@ def greet() -> None:
 
 
 def ignore_email() -> None:
+    """Custom procedure call when player ignores kevin's email."""
     global points
     print("After a day, Kevin emails you yet again. The email says...")
     print("\"" + player + ",")
-    print("It appears that you did not recieve my first email. Would you like to go on a date?")
+    print("It appears that you did not recieve my first email. Would you like to go on a date?\"")
     print("You...")
     print("a) Tell him to stop bothering you. You're not interested.")
     print("b) Tell him that you accept the invite, but only because he's annoying you.")
@@ -56,13 +60,68 @@ def ignore_email() -> None:
     else:
         print("Okay, but please know that you shouldn't say yes to men just because they're bothering you.")
         print("It is important that you stand your ground, no matter how much men pester you.")
+        print("Anyways... along with the dating sim!")
         points += 2
         respond_email()
     return None
 
 
 def respond_email(number: int) -> int:
+    """What occurs when you positively respond to kevin's email."""
+    print("Kevin quickly responds to your email:")
+    print("\"" + player + ",")
+    print("Perfect! We should meet for dinner at 7 tomorrow!")
+    print("Where would you like to go?\"")
+    print("a) Chipotle")
+    print("b) Panera")
+    choice: str = str(input("Which restaurant do you choose? "))
+    if choice == "a":
+        number += 1
+        restaurant(points)
+    else:
+        number += 3
+        restaurant(points)
+    return int(number)
+
+
+def restaurant() -> None:
+    """What happens at the restaurant you chose."""
     global points
+    if points <= 6:
+        print("You chose Chipotle!")
+        pay(points)
+        print("Unfortunately for you, Chipotle upsets Kevin's fragile little tummy.")
+        print("He gets gassy, and the date ends.")
+        print("Your Kevin points are " + str(points) + ".")
+    else:
+        print("You chose Panera!")
+        pay(points)
+        print("At the end of the meal, Kevin reveals to you that he thinks the date went really well.")
+        print("He says he feels comfortable enough with you to reveal his deepest secret.")
+        print("He unzips his fly and pulls out a leopard gecko.")
+        print("He says that this is his pet that he has been hiding from the world.")
+        print("The gecko's name is Jared.")
+        print("You get weirded out and leave the date immediately.")
+        print("Your Kevin points are " + str(points) + ".")
+    return None
+
+
+def pay(number: int) -> int:
+    """What happens when you pay for your meal."""
+    print("When you go to pay at the counter, Kevin offers to pay for your meal. You...")
+    print("a) Accept his offer.")
+    print("b) Pay for your own food.")
+    choice: str = str(input("What do you do? "))
+    if choice == "a":
+        number += 2
+        print("Kevin likes that you let him pay for you.")
+        print("He likes to show off his excessive amount of money that he earns off of your tuition.")
+    else:
+        number += 1
+        print("This disappoints Kevin. He really wanted to show off his excessive wealth.")
+        print("Because he has been charging full tuition for online school, he has plenty of money to spare.")
+    return number(int)
+
 
 if __name__ == "__main__":
     main()
