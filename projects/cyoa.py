@@ -33,8 +33,6 @@ def main() -> None:
         ignore_email()
         print(f"Your Kevin Points are {points}.")
     else:
-        print("Bestie... are you okay? Did you take your meds today?")
-        print("I really hope you selected this one for the meme.")
         points += 5
         points = respond_email(points)
         print(f"Your Kevin Points are {points}.")
@@ -92,7 +90,7 @@ def respond_email(number: int) -> int:
 def restaurant() -> None:
     """What happens at the restaurant you chose."""
     global points
-    if points <= 6:
+    if points < 6:
         print("You chose Chipotle!")
         points = pay(points)
         print(f"Unfortunately for you, Chipotle upsets Kevin's fragile little tummy. {ANXIOUS}")
