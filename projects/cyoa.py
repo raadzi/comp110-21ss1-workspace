@@ -23,7 +23,7 @@ def main() -> None:
     choice: str = str(input("What do you do? "))
     if choice == "a":
         points += 1
-        print("Understandable. I would do the same. Your Kevin Points are " + str(points) + ".")
+        print("Understandable. I would do the same.")
     elif choice == "b":
         print("Honestly, same. Responding to emails is so laborsome.")
         points += 2
@@ -33,6 +33,7 @@ def main() -> None:
         print("I really hope you selected this one for the meme.")
         points += 5
         points = respond_email(points)
+    print("Your Kevin Points are " + str(points) + ".")
     return None
 
 
@@ -92,7 +93,6 @@ def restaurant() -> None:
         points = pay(points)
         print("Unfortunately for you, Chipotle upsets Kevin's fragile little tummy.")
         print("He gets gassy, and the date ends.")
-        print("Your Kevin points are " + str(points) + ".")
     else:
         print("You chose Panera!")
         points = pay(points)
@@ -102,7 +102,6 @@ def restaurant() -> None:
         print("He says that this is his pet that he has been hiding from the world.")
         print("The gecko's name is Jared.")
         print("You get weirded out and leave the date immediately.")
-        print("Your Kevin points are " + str(points) + ".")
     return None
 
 
