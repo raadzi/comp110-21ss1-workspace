@@ -24,17 +24,18 @@ def main() -> None:
     choice: str = str(input("What do you do? "))
     if choice == "a":
         points += 1
-        print("Understandable. I would do the same.")
+        print("Understandable. I would do the same. Your Kevin Points are " + str(points) + ".")
     elif choice == "b":
         print("Honestly, same. Responding to emails is so laborsome.")
         points += 2
         ignore_email()
+        print("Your Kevin Points are " + str(points) + ".")
     else:
         print("Bestie... are you okay? Did you take your meds today?")
         print("I really hope you selected this one for the meme.")
         points += 5
         points = respond_email(points)
-    print("Your Kevin Points are " + str(points) + ".")
+        print("Your Kevin Points are " + str(points) + ".")
     return None
 
 
