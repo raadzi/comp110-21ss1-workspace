@@ -59,13 +59,13 @@ def ignore_email() -> None:
     choice: str = str(input("What do you do? "))
     if choice == "a":
         points += 1
-        print("As you should. Men are gross anyways.")
+        print("As you should. Men are gross anyways. This ends your dating simulation.")
     else:
         print("Okay, but please know that you shouldn't say yes to men just because they're bothering you.")
         print("It is important that you stand your ground, no matter how much men pester you.")
         print("Anyways... along with the dating sim!")
         points += 2
-        respond_email(points)
+        points = respond_email(points)
     return None
 
 
@@ -90,7 +90,7 @@ def respond_email(number: int) -> int:
 def restaurant() -> None:
     """What happens at the restaurant you chose."""
     global points
-    if points < 6:
+    if points <= 6:
         print("You chose Chipotle!")
         points = pay(points)
         print(f"Unfortunately for you, Chipotle upsets Kevin's fragile little tummy. {ANXIOUS}")
