@@ -90,12 +90,7 @@ def respond_email(number: int) -> int:
 def restaurant() -> None:
     """What happens at the restaurant you chose."""
     global points
-    if points <= 6:
-        print("You chose Chipotle!")
-        points = int(pay(points))
-        print(f"Unfortunately for you, Chipotle upsets Kevin's fragile little tummy. {ANXIOUS}")
-        print("He gets gassy, and the date ends.")
-    else:
+    if points > 6:
         print("You chose Panera!")
         points = int(pay(points))
         print("At the end of the meal, Kevin reveals to you that he thinks the date went really well.")
@@ -104,6 +99,11 @@ def restaurant() -> None:
         print("He says that this is his pet that he has been hiding from the world.")
         print(geckos_name())
         print("You get weirded out and leave the date immediately.")
+    else:
+        print("You chose Chipotle!")
+        points = int(pay(points))
+        print(f"Unfortunately for you, Chipotle upsets Kevin's fragile little tummy. {ANXIOUS}")
+        print("He gets gassy, and the date ends.")
     return None
 
 
