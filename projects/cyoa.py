@@ -16,7 +16,7 @@ def main() -> None:
     """The entrypoint of the program, when run as a module."""
     greet()
     global points
-    while points >= 0
+    while points >= 0:
         print(f"Hello, {player}! It is a sunny day, and you've just finished watching today's Comp 110 lecture.")
         print("You're excited to get started on your homework for the day, but you decide to check your email first.")
         print("You open your inbox and see a message from none other than your university's chancellor himself!")
