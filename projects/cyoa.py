@@ -3,7 +3,7 @@
 __author__ = "730429363"
 
 
-points: int = int(10)
+points: int = int(0)
 player: str = str("y/n")
 
 def main() -> None:
