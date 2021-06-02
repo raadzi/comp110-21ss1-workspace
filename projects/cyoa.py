@@ -32,7 +32,7 @@ def main() -> None:
         print("Bestie... are you okay? Did you take your meds today?")
         print("I really hope you selected this one for the meme.")
         points += 5
-        respond_email(points)
+        points = respond_email(points)
     return None
 
 
@@ -77,10 +77,10 @@ def respond_email(number: int) -> int:
     choice: str = str(input("Which restaurant do you choose? "))
     if choice == "a":
         number += 1
-        restaurant(points)
+        restaurant()
     else:
         number += 3
-        restaurant(points)
+        restaurant()
     return int(number)
 
 
@@ -89,13 +89,13 @@ def restaurant() -> None:
     global points
     if points <= 6:
         print("You chose Chipotle!")
-        pay(points)
+        points = pay(points)
         print("Unfortunately for you, Chipotle upsets Kevin's fragile little tummy.")
         print("He gets gassy, and the date ends.")
         print("Your Kevin points are " + str(points) + ".")
     else:
         print("You chose Panera!")
-        pay(points)
+        points = pay(points)
         print("At the end of the meal, Kevin reveals to you that he thinks the date went really well.")
         print("He says he feels comfortable enough with you to reveal his deepest secret.")
         print("He unzips his fly and pulls out a leopard gecko.")
