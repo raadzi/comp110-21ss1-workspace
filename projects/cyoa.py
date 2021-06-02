@@ -121,7 +121,7 @@ def pay(number: int) -> int:
         number += 1
         print("This disappoints Kevin. He really wanted to show off his excessive wealth.")
         print("Because he has been charging full tuition for online school, he has plenty of money to spare.")
-    return number(int)
+    return int(number)
 
 
 if __name__ == "__main__":
