@@ -8,3 +8,6 @@ def main() -> None:
     points: int = int(10)
     player: str = str(input("What is your name? "))
     return None
+
+if __name__ == "__main__":
+    main()
