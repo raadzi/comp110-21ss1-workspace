@@ -36,7 +36,9 @@ def begin_adventure() -> int:
         points += 1
     else:
         print("Bestie... are you okay? Did you take your meds today? I really hope you selected this one for the meme.")
-    return None
+        global points
+        points += 2
+    return int(points)
 
 
 if __name__ == "__main__":
