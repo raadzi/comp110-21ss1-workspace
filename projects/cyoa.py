@@ -14,7 +14,7 @@ def main() -> None:
     """The entrypoint of the program, when run as a module."""
     greet()
     global points
-    print("Hello, " + player + "! It is a sunny day, and you've just finished watching the latest lecture for your Comp 110 class.")
+    print("Hello, " + player + "! It is a sunny day, and you've just finished watching today's Comp 110 lecture.")
     print("You're excited to get started on your homework for the day, but you decide to check your email first.")
     print("You open your inbox and see a message from none other than your university's chancellor himself!")
     print("You read the email and see that Kevin wants to go on a date with you! You... ")
@@ -58,13 +58,13 @@ def ignore_email() -> None:
     choice: str = str(input("What do you do? "))
     if choice == "a":
         points += 1
-        print("As you should. Men are gross anyways. Your Kevin Points are " + str(points) + ".")
+        print("As you should. Men are gross anyways.")
     else:
         print("Okay, but please know that you shouldn't say yes to men just because they're bothering you.")
         print("It is important that you stand your ground, no matter how much men pester you.")
         print("Anyways... along with the dating sim!")
         points += 2
-        respond_email()
+        respond_email(points)
     return None
 
 
