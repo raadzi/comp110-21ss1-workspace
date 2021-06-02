@@ -10,19 +10,6 @@ player: str = "y/n"
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
     greet()
-    begin_adventure()
-    return None
-
-
-def greet() -> None:
-    """Function to greet the player and begin their adventure."""
-    print("Hello! Welcome to the Kevin G dating simulator! This hurts me more than it hurts you :)")
-    global player
-    player = str(input("What is your name? "))
-    return None
-
-
-def begin_adventure() -> int:
     global points
     print("Hello, " + player + "! It is a sunny day, and you've just finished watching the latest lecture for your Comp 110 class.")
     print("You're excited to get started on your homework for the day, but you decide to check your email first.")
@@ -42,8 +29,16 @@ def begin_adventure() -> int:
     else:
         print("Bestie... are you okay? Did you take your meds today? I really hope you selected this one for the meme.")
         points += 5
-        respond_email()
-    return int(points)
+        respond_email(points)
+    return None
+
+
+def greet() -> None:
+    """Function to greet the player and begin their adventure."""
+    print("Hello! Welcome to the Kevin G dating simulator! This hurts me more than it hurts you :)")
+    global player
+    player = str(input("What is your name? "))
+    return None
 
 
 def ignore_email() -> None:
@@ -66,8 +61,8 @@ def ignore_email() -> None:
     return None
 
 
-def respond_email(points: int) -> int:
-
+def respond_email(number: int) -> int:
+    global points
 
 if __name__ == "__main__":
     main()
