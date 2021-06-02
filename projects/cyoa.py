@@ -17,7 +17,7 @@ def greet() -> None:
     """Function to greet the player and begin their adventure."""
     print("Hello! Welcome to the Kevin G dating simulator! This hurts me more than it hurts you :)")
     global player
-    player: str = str(input("What is your name? "))
+    player = str(input("What is your name? "))
     return None
 
 def begin_adventure() -> int:
