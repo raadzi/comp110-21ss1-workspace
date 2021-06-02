@@ -4,7 +4,7 @@ __author__ = "730429363"
 
 
 points: int = int(0)
-player: str = str("y/n")
+player: str = "y/n"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
