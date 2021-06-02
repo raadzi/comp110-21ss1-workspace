@@ -34,7 +34,7 @@ def main() -> None:
         print(f"Your Kevin Points are {points}.")
     else:
         points += 5
-        points = respond_email(points)
+        respond_email(points) = points
         print(f"Your Kevin Points are {points}.")
     return None
 
@@ -65,7 +65,7 @@ def ignore_email() -> None:
         print("It is important that you stand your ground, no matter how much men pester you.")
         print("Anyways... along with the dating sim!")
         points += 2
-        points = respond_email(points)
+        respond_email(points) = points
     return None
 
 
@@ -92,12 +92,12 @@ def restaurant() -> None:
     global points
     if points <= 6:
         print("You chose Chipotle!")
-        points = pay(points)
+        pay(points) = points
         print(f"Unfortunately for you, Chipotle upsets Kevin's fragile little tummy. {ANXIOUS}")
         print("He gets gassy, and the date ends.")
     else:
         print("You chose Panera!")
-        points = pay(points)
+        pay(points) = points
         print("At the end of the meal, Kevin reveals to you that he thinks the date went really well.")
         print("He says he feels comfortable enough with you to reveal his deepest secret.")
         print("He unzips his fly and pulls out a leopard gecko.")
