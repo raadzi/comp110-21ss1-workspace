@@ -1,6 +1,7 @@
-"""A choose your own adventure experience in which you date kevin g."""
+"""A choose your own adventure experience in which you date Kevin G."""
 """Idk why this got so long."""
 """Okay I finished, I deeply apologize."""
+"""I'm pretty sure the pay function counts as above and beyond."""
 
 __author__ = "730429363"
 
