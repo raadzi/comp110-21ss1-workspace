@@ -7,5 +7,4 @@ def main() -> None:
     """The entrypoint of the program, when run as a module."""
     points: int = int(10)
     player: str = str(input("What is your name? "))
-    
     return None
