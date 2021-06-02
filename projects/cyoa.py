@@ -21,7 +21,7 @@ def main() -> None:
         print("You're excited to get started on your homework for the day, but you decide to check your email first.")
         print("You open your inbox and see a message from none other than your university's chancellor himself!")
         print("You read the email and see that Kevin wants to go on a date with you! You... ")
-        print("a) Respond to the email saying that you do not want to date Kevin. This choice ends the dating simulation.")
+        print("a) Respond to the email saying that you don't want to date Kevin. This choice ends the dating sim.")
         print("b) Ignore Kevin's email.")
         print("c) Excitedly let Kevin know that you'd love to go on a date with him!")
         choice: str = str(input("What do you do? "))
