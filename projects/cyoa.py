@@ -9,6 +9,7 @@ __author__ = "730429363"
 points: int = 0
 player: str = "y/n"
 SMILE = "\U0001F600"	
+ANXIOUS = "\U0001F630"
 
 
 def main() -> None:
@@ -94,7 +95,7 @@ def restaurant() -> None:
     if points <= 6:
         print("You chose Chipotle!")
         points = pay(points)
-        print("Unfortunately for you, Chipotle upsets Kevin's fragile little tummy.")
+        print(f"Unfortunately for you, Chipotle upsets Kevin's fragile little tummy. {ANXIOUS}")
         print("He gets gassy, and the date ends.")
     else:
         print("You chose Panera!")
