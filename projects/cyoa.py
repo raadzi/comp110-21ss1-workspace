@@ -43,9 +43,9 @@ def main() -> None:
         print("b) no")
         play_again: str = str(input("Answer: "))
         if play_again == "b":
-            points == -1
+            points = -1
         else:
-            points == 0
+            points = 0
     return None
 
 
