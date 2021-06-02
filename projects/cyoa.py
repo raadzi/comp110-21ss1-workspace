@@ -29,7 +29,7 @@ def begin_adventure() -> int:
     print("You open your inbox and see a message from none other than your university's chancellor himself!")
     print("You read the email and see that Kevin wants to go on a date with you! You... ")
     print("a) Respond to the email saying that you do not want to date Kevin. This choice ends the dating simulation.")
-    print("b) Tell Kevin that it is a little weird that he is asking out a member of the UNC community, but you warily accept")
+    print("b) Tell Kevin that it's a little weird that he's asking out a member of the UNC community, but you warily accept.")
     print("c) Excitedly let Kevin know that you'd love to go on a date with him!")
     choice: str = str(input("What do you do? "))
     if choice == "a":
