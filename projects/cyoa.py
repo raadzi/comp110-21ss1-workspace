@@ -3,10 +3,12 @@
 __author__ = "730429363"
 
 
+points: int = int(10)
+player: str = str(input("What is your name? "))
+
+
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    points: int = int(10)
-    player: str = str(input("What is your name? "))
     return None
 
 if __name__ == "__main__":
