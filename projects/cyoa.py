@@ -66,7 +66,7 @@ def ignore_email() -> None:
         print("Anyways... along with the dating sim!")
         points += 2
         points = int(respond_email(points))
-        restaurant()
+    restaurant()
     return None
 
 
