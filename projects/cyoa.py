@@ -104,7 +104,7 @@ def restaurant() -> None:
         print("He says he feels comfortable enough with you to reveal his deepest secret.")
         print("He unzips his fly and pulls out a leopard gecko.")
         print("He says that this is his pet that he has been hiding from the world.")
-        print("The gecko's name is Jared.")
+        print(geckos_name())
         print("You get weirded out and leave the date immediately.")
     return None
 
@@ -125,6 +125,21 @@ def pay(number: int) -> int:
         print("Because he has been charging full tuition for online school, he has plenty of money to spare.")
     return int(number)
 
+
+def geckos_name() -> str:
+    """Determines the gecko's name."""
+    from random import randint
+    number: int = int(randint(1, 4))
+    if number <= 2:
+        if number == 1:
+            return "The gecko's name is Jared."
+        else:
+            return "The gecko's name is Leaf Crunchy the Gecko."
+    else:
+        if number != 4:
+            return "The gecko's name is Turnip."
+        else:
+            return "The gecko's name is Walter."
 
 if __name__ == "__main__":
     main()
