@@ -16,6 +16,8 @@ def is_prime(number: int) -> bool:
     """Determines whether or not a number is prime."""
     if number <= 1:
         return False
+    elif number == 2:
+        return True
     else:
         x = 2
         remainder: int = number % x
