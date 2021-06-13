@@ -28,6 +28,7 @@ def is_prime(number: int) -> bool:
 def list_primes(first_choice: int, second_choice: int) -> list[int]:
     number = first_choice
     primes: list[int]
+    primes = []
     while number < second_choice:
         if bool(is_prime(number) == True):
             primes.append(number)
