@@ -22,6 +22,7 @@ def is_prime(number: int) -> bool:
         x = 2
         remainder: int = number % x
         while (bool(remainder == 0) is False) and x < number:
+            remainder: int = number % x
             x += 1
         if bool(remainder == 0) is True:
             return False
