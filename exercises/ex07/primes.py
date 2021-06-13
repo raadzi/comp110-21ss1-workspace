@@ -5,7 +5,9 @@ __author__ = "7304293963"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    first_choice = int(input("Enter a number: "))
+    print("This program will evaluate which prime numbers exist between two integers. This includes the first integer, but not the second.")
+    first_choice = int(input("Choose your first integer: "))
+    second_choice = int(input("Choose your second integer: "))
     print(is_prime(number))
 
 
