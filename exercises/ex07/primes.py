@@ -5,7 +5,8 @@ __author__ = "7304293963"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    # TODO 3: Test your functions here
+    number = int(input("Enter a number: "))
+    is_prime(number)
 
 
 def is_prime(number: int) -> bool:
