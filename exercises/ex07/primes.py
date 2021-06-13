@@ -34,6 +34,9 @@ def list_primes(first_choice: int, second_choice: int) -> list[int]:
     number = first_choice
     primes: list[int]
     primes = []
+    if bool(is_prime(number)) is True:
+            primes.append(number)
+    number += 1
     while number < second_choice:
         if bool(is_prime(number)) is True:
             primes.append(number)
