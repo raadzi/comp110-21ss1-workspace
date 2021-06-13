@@ -38,5 +38,6 @@ def list_primes(first_choice: int, second_choice: int) -> list[int]:
         number += 1
     return primes
 
+
 if __name__ == "__main__":
     main()
