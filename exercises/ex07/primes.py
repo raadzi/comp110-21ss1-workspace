@@ -1,6 +1,6 @@
 """An exercise with functions and lists."""
 
-__author__ = "7304293963"
+__author__ = "730429363"
 
 
 def main() -> None:
