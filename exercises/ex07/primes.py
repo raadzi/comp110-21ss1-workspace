@@ -5,7 +5,7 @@ __author__ = "7304293963"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    number = int(input("Enter a number: "))
+    first_choice = int(input("Enter a number: "))
     print(is_prime(number))
 
 
@@ -23,8 +23,14 @@ def is_prime(number: int) -> bool:
             return True
 
 
-# TODO 2: Define the list_primes function, and its logic, here.
-
+def list_primes(first_choice: int, second_choice: int) -> list[int]:
+    number = first_choice
+    primes: list[int]
+    while number < second_choice:
+        if bool(is_prime(number) == True):
+            primes.append(number)
+        number += 1
+    return primes
 
 if __name__ == "__main__":
     main()
