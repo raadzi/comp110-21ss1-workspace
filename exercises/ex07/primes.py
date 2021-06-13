@@ -16,6 +16,10 @@ def is_prime(number: int) -> bool:
         remainder = number % x
         while bool(remainder = 0) == False and x < number:
             x += 1
+        if bool(remainder = 0) == True:
+            return False
+        else:
+            return True
 
 
 # TODO 2: Define the list_primes function, and its logic, here.
