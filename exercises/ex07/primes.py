@@ -8,7 +8,7 @@ def main() -> None:
     print("This program will evaluate which prime numbers exist between two integers. This includes the first integer, but not the second.")
     first_choice = int(input("Choose your first integer: "))
     second_choice = int(input("Choose your second integer: "))
-    print(is_prime(number))
+    print(list_primes(first_choice, second_choice))
 
 
 def is_prime(number: int) -> bool:
