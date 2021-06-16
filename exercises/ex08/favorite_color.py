@@ -16,7 +16,7 @@ def favorite_color(students: dict[str, str]) -> str:
         if students[student] in colors:
             colors[students[student]] += 1
         else:
-            colors.append([students[student], 1])
+            colors[students[student]] = 1
     for color in colors:
         color_counts: list[int] = []
         color_counts.append(colors[color])
