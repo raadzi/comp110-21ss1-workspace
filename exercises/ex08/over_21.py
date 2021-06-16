@@ -5,11 +5,7 @@ __author__ = "730429363"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    print("Write the names and birth years of the students that you want to know are over 21 or not.")
-    print("Format this entry with their name in quotes followed by a colon and their birth year.")
-    print("Separate each entry with a comma. Eaxample:")
-    print("\"Isabelle\": 2001, \"Jason\": 1999, \"Caroline\": 2002, \"Riley\": 2000")
-    students: dict[str, int] = dict[str, int](input())
+    students: dict[str, int] = {"Isabelle": 2001, "Mae": 1999, "Riley": 2002, "Jean": 2000}
     print(over_21(students))
 
 
