@@ -9,7 +9,7 @@ def main() -> None:
     print("Format this entry with their name in quotes followed by a colon and their birth year.")
     print("Separate each entry with a comma. Eaxample:")
     print("\"Isabelle\": 2001, \"Jason\": 1999, \"Caroline\": 2002, \"Riley\": 2000")
-    students = dict[str, int](input(""))
+    students: dict[str, int] = {dict[str, int](input)}
     print(over_21(students))
 
 
