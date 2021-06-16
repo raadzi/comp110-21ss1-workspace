@@ -1,6 +1,6 @@
 """A program to determine top favorite colors."""
 
-__author__ = "YOUR 9-DIGIT PID"
+__author__ = "730429363"
 
 
 def main() -> None:
