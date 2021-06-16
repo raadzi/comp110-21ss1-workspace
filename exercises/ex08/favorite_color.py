@@ -6,9 +6,11 @@ __author__ = "730429363"
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
     students: dict[str, str] = {"Isabelle": "brown", "Mae": "purple", "Riley": "purple", "Jean": "green"}
+    print(favorite_color(students))
 
 
 def favorite_color(students: dict[str, str]) -> str:
+    """Determines the most popular color."""
     colors: list[str, int] = []
     for student in students:
         if favorite_color[student] in colors:
