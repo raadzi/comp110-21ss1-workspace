@@ -13,10 +13,10 @@ def favorite_color(students: dict[str, str]) -> str:
     """Determines the most popular color."""
     colors: list[str, int] = []
     for student in students:
-        if favorite_color[student] in colors:
-            colors[favorite_color[student]] += 1
+        if str(favorite_color[student]) in colors:
+            colors[str(favorite_color[student])] += 1
         else:
-            colors.append([favorite_color[student], 1])
+            colors.append([str(favorite_color[student]), 1])
     most_popular: int = colors[0]
     for color in colors:
         if color > most_popular:
