@@ -7,7 +7,7 @@ __author__ = "730429363"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    
+
 
 class Animal:
     species: str
@@ -50,13 +50,13 @@ class Team:
 
     def who_won(self, opponent: Team) -> str.who_won:
         if self.score == 0 and opponent.score == 0:
-            return str("The battle hasn't happened yet")
+            return str.who_won == str("The battle hasn't happened yet")
         elif self.score == opponent.score:
-            return str("It was a tie!")
+            return str.who_won == str("It was a tie!")
         elif self.score >= opponent.score:
-            return str(f"Team {self.team_name} won!")
+            return str.who_won == str(f"Team {self.team_name} won!")
         else:
-            return str(f"Team {opponent.team_name} won!")
+            return str.who_won == str(f"Team {opponent.team_name} won!")
 
 if __name__ == "__main__":
     main()
