@@ -3,11 +3,6 @@
 __author__ = "730429363"
 
 
-def main() -> None:
-    """The entrypoint of the program, when run as a module."""
-    print(over_21(students))
-
-
 def over_21(students: dict[str, int]) -> list[str]:
     """Determines which students are over 21."""
     drinking_age: list[str] = []
@@ -15,7 +10,3 @@ def over_21(students: dict[str, int]) -> list[str]:
         if students[student] < 2000:
             drinking_age.append(student)
     return drinking_age
-
-
-if __name__ == "__main__":
-    main()
