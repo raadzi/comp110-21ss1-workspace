@@ -3,12 +3,6 @@
 __author__ = "730429363"
 
 
-def main() -> None:
-    """The entrypoint of the program, when run as a module."""
-    favorite_color(dict[str, str])
-    return None
-
-
 def favorite_color(students: dict[str, str]) -> str:
     """Determines the most popular color."""
     colors: list[str] = []
@@ -25,7 +19,3 @@ def favorite_color(students: dict[str, str]) -> str:
         if popularity[color] > popularity[result]:
             result = color
     return result
-
-
-if __name__ == "__main__":
-    main()
