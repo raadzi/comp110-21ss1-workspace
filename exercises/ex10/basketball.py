@@ -4,11 +4,11 @@ __author__ = "730429363"
 
 
 class BBallGame:
+    """BBallGame class created uwu."""
     biscuits: bool
     points: int
     winning_team: str
     losing_team: str
-
 
     def __init__(self, points: int, winning_team: str, losing_team: str):
         """Constructor of the class."""
@@ -17,12 +17,10 @@ class BBallGame:
         self.losing_team: str = losing_team
         self.biscuits: bool = False
 
-
     def check_points(self) -> None:
         """Checks if there is enough points for biscuits."""
         if self.points >= 100:
             self.biscuits: bool = True
-
 
     def winner(self) -> str:
         """Return based on whether UNC wins and if it is against Duke."""
@@ -32,7 +30,6 @@ class BBallGame:
             return str("woohoo")
         else:
             return str("daggum")
-
 
     def reset_points(self) -> int:
         """Resets the points and returns current points."""
