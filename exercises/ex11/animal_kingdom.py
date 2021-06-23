@@ -1,35 +1,62 @@
 """A program that explores the animal kingdom."""
 
-__author__ = "YOUR 9-DIGIT PID"
+from __future__ import annotations
+
+__author__ = "730429363"
 
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    # TODO 3: Uncomment the following lines to test your classes
-    # lion = Animal("lion", 10, "\U0001F981")
-    # pig = Animal("pig", 3, "\U0001F437")
-    # ram = Animal("ram", 6, "\U0001F40F")
-    # elephant = Animal("elephant", 9, "\U0001F418")
-    # gorilla = Animal("gorilla", 7, "\U0001F98D")
-    # camel = Animal("camel", 4, "\U0001F42A")
+    
 
-    # team1 = Team("Hello Kitty", [lion, ram, pig])
-    # team2 = Team("BIG", [elephant, gorilla, camel])
+class Animal:
+    species: str
+    danger_level: int
+    emoji: str
 
-    # winners = team1.battle(team2)
+    def __init__(self, species: str, danger_level: int, emoji: str):
+        self.species: str = species
+        self.danger_level: str = danger_level
+        self.emoji: str = emoji
+    
+    def fight(self, opponent: Animal) -> Animal:
+        if self.danger_level > opponent.danger_level:
+            return self
+        else:
+            return opponent
 
-    # print(f"{team1.team_name} vs {team2.team_name}")
+class Team:
+    team_name: str
+    animals: list[Animal]
+    score: int
 
-    # for i in range(len(team1.animals)):
-    #     print(f"{team1.animals[i].emoji}  vs {team2.animals[i].emoji}")
-    #     print(f"The {winners[i].species} wins!")
+    def __init__(self, team_name: str, animals: list[Animal]):
+        self.team_name: str = team_name
+        self.animals: list[Animal] = animals
+        self.score: int = 0
 
-    # print(team1.who_won(team2))
+    def battle(self, opponent: Team) -> list[Animal].battle:
+        i = 0
+        winners: list[Animal] = []
+        while i < len(self.animals) and i < opponent.animals:
+            if self.animals[i].fight(self, opponent.animals[i]) == self.animals[i]:
+                self.score += 1
+                winners.append(self.animals[i])
+            else:
+                opponent.score += 1
+                winners.append(opponent.animals[i])
+            i += 1
+        return winners
 
-
-# TODO 1: Define the Animal class, and its logic, here.
-
-# TODO 2: Define the Team class, and its logic, here.
+    def who_won(self, opponent: Team) -> str.who_won:
+        if self.score == 0 and opponent.score == 0:
+            return str("The battle hasn't happened yet")
+        elif self.score == opponent.score:
+            return str("It was a tie!")
+        elif self.score >= opponent.score:
+            return str(f"Team {self.team_name} won!")
+        else:
+            return str(f"Team {opponent.team_name} won!")
 
 if __name__ == "__main__":
     main()
