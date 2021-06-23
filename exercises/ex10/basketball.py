@@ -2,6 +2,7 @@
 
 __author__ = "730429363"
 
+
 class BBallGame:
     biscuits: bool
     points: int
