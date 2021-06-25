@@ -16,12 +16,12 @@ def main() -> None:
     soupy.speed(0)
     time_of_day: int = randint(0, 1)
     if time_of_day == 0:
-        day(soupy, 0, 0)
+        day(soupy, -200, -200)
     else:
-        night(soupy, 0, 0)
+        night(soupy, -200, -200)
     soupy.left(180)
     ground(soupy, -200, -200)
-    flower(soupy, 2.5, -130)
+    flower(soupy, -197, -130)
     soupy.left(90)
     dude(soupy, -155, 20)
     soupy.left(90)
