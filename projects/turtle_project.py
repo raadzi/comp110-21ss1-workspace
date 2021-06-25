@@ -77,7 +77,7 @@ def main() -> None:
     """The entrypoint of the program, when run as a module."""
     soupy: Turtle = Turtle()
     ground(soupy, 0, 0)
-    soupy.right(90)
+    soupy.left(90)
     dude(soupy, 45, 220)
     soupy.left(180)
     dude(soupy, 200, 220)
