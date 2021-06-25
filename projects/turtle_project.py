@@ -88,13 +88,18 @@ def night(turtle: Turtle, x: float, y: float) -> None:
     turtle.begin_fill()
     rectangle(turtle, 50, 50)
     turtle.end_fill()
+    stars(turtle)
+    return None
+
+
+def stars(turtle: Turtle) -> None:
     turtle.pensize(5)
     turtle.pencolor("white")
     i: int = 0
     while i <= 39:
-        star_x: int = randint(-199, 199)
-        star_y: int = randint(-100, 199)
-        teleport(turtle, star_x, star_y)
+        x: int = randint(-199, 199)
+        y: int = randint(-100, 199)
+        teleport(turtle, x, y)
         rectangle(turtle, 1, 1)
         i += 1
     turtle.pensize(1)
