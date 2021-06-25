@@ -37,8 +37,8 @@ def line(turtle: Turtle, start_x: float, start_y: float, end_x: float, end_y: fl
 def flower (turtle: Turtle, x: float, y: float) -> None:
     while x <= 397.5:
         teleport(turtle, x, y)
-        line(x, y, x, y + 10)
-        line(x - 2.5, y + 7.5, x + 2.5, y + 12.5)
+        line(turtle, x, y, x, y + 10)
+        line(turtle, x - 2.5, y + 7.5, x + 2.5, y + 12.5)
         x += 10
     return None
 
