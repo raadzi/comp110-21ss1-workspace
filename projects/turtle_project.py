@@ -43,8 +43,8 @@ def flower (turtle: Turtle, x: float, y: float) -> None:
         turtle.pensize(5)
         line(turtle, x - 2.5, y + 7.5, x + 2.5, y + 12.5)
         line(turtle, x - 2.5, y + 12.5, x + 2.5, y + 7.5)
-        turtle.pensize()
-        x += 10
+        turtle.pensize(1)
+        x += 12
     turtle.pencolor("black")
     return None
 
