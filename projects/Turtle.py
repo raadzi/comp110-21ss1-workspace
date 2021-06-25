@@ -1,4 +1,5 @@
 from turtle import Turtle, colormode, done
+colormode(255)
 leo: Turtle = Turtle()
 #makes leo
 leo.forward(50)
