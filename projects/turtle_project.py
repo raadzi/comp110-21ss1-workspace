@@ -56,7 +56,6 @@ def ground(turtle: Turtle, x: float, y: float) -> None:
     turtle.begin_fill()
     rectangle(turtle, 400, 70)
     turtle.end_fill()
-    flower(turtle, 2.5, 70)
     return None
 
 def dude(turtle: Turtle, x: float, y: float) -> None:
@@ -88,21 +87,19 @@ def sword(turtle: Turtle, x: float, y: float) -> None:
     return None
 
 
-def top_hat(turtle: Turtle, x: float, y: float) -> None:
-    teleport(turtle, x, y)
-    return None
-
-
-def triangle_hat(turtle: Turtle, x: float, y: float) -> None:
-    teleport(turtle, x, y)
-    return None
-
-
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
     soupy: Turtle = Turtle()
     soupy.speed(0)
+    time_of_day = randint(0, 2)
+    if time_of_day == 0:
+        day(turtle, 0, 0)
+    elif time_of_day == 1:
+        sunrise(turtle, 0, 0)
+    else:
+        night(turtle, 0, 0)
     ground(soupy, 0, 0)
+    flower(soupy, 2.5, 70)
     soupy.left(90)
     dude(soupy, 45, 220)
     soupy.left(90)
