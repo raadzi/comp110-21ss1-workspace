@@ -135,7 +135,6 @@ def dude(turtle: Turtle, x: float, y: float) -> None:
     """Draws a lil dude."""
     teleport(turtle, x, y)
     turtle.pencolor("black")
-    turtle.pensize(3)
     turtle.fillcolor(233, 209, 173)
     turtle.begin_fill()
     rectangle(turtle, 60, 60)
