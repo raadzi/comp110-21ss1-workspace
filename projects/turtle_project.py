@@ -85,6 +85,8 @@ def main() -> None:
     dude(soupy, 45, 220)
     soupy.left(90)
     dude(soupy, 200, 220)
+    sword(soupy, 40, 140)
+    sword(soupy, 195, 140)
     done()
     return None
 
