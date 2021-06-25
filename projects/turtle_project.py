@@ -19,6 +19,7 @@ def main() -> None:
         day(soupy, 0, 0)
     else:
         night(soupy, 0, 0)
+    soupy.left(180)
     ground(soupy, 0, 0)
     flower(soupy, 2.5, 70)
     soupy.left(90)
@@ -63,6 +64,7 @@ def day(turtle: Turtle, x: float, y: float) -> None:
     turtle.fillcolor(133, 214, 226)
     turtle.begin_fill()
     rectangle(turtle, 400, 400)
+    turtle.end_fill()
     turtle.pencolor("black")
     turtle.fillcolor("yellow")
     teleport(turtle, 100, 350)
@@ -78,6 +80,7 @@ def night(turtle: Turtle, x: float, y: float) -> None:
     turtle.fillcolor(53, 0, 147)
     turtle.begin_fill()
     rectangle(turtle, 400, 400)
+    turtle.end_fill()
     turtle.pencolor("black")
     turtle.fillcolor("white")
     teleport(turtle, 100, 350)
@@ -92,6 +95,7 @@ def night(turtle: Turtle, x: float, y: float) -> None:
         star_y: int = randint(71, 399)
         teleport(turtle, star_x, star_y)
         i += 1
+    turtle.pensize(1)
     return None
 
 
