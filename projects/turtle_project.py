@@ -20,14 +20,14 @@ def main() -> None:
     else:
         night(soupy, 0, 0)
     soupy.left(180)
-    ground(soupy, 0, 0)
-    flower(soupy, 2.5, 70)
+    ground(soupy, -200, -200)
+    flower(soupy, 2.5, -130)
     soupy.left(90)
-    dude(soupy, 45, 220)
+    dude(soupy, -155, 20)
     soupy.left(90)
-    dude(soupy, 200, 220)
-    sword(soupy, 110, 140)
-    sword(soupy, 265, 140)
+    dude(soupy, 0, 20)
+    sword(soupy, -90, -60)
+    sword(soupy, 65, -60)
     done()
     return None
 
@@ -67,7 +67,7 @@ def day(turtle: Turtle, x: float, y: float) -> None:
     turtle.end_fill()
     turtle.pencolor("black")
     turtle.fillcolor("yellow")
-    teleport(turtle, 100, 350)
+    teleport(turtle, -100, 150)
     turtle.begin_fill()
     rectangle(turtle, 50, 50)
     turtle.end_fill()
@@ -83,7 +83,7 @@ def night(turtle: Turtle, x: float, y: float) -> None:
     turtle.end_fill()
     turtle.pencolor("black")
     turtle.fillcolor("white")
-    teleport(turtle, 100, 350)
+    teleport(turtle, -100, 150)
     turtle.begin_fill()
     rectangle(turtle, 50, 50)
     turtle.end_fill()
@@ -91,8 +91,8 @@ def night(turtle: Turtle, x: float, y: float) -> None:
     turtle.pencolor("white")
     i: int = 0
     while i <= 39:
-        star_x: int = randint(1, 399)
-        star_y: int = randint(100, 399)
+        star_x: int = randint(-199, 199)
+        star_y: int = randint(-100, 199)
         teleport(turtle, star_x, star_y)
         rectangle(turtle, 1, 1)
         i += 1
@@ -101,7 +101,7 @@ def night(turtle: Turtle, x: float, y: float) -> None:
 
 
 def flower (turtle: Turtle, x: float, y: float) -> None:
-    while x <= 397.5:
+    while x <= 197.5:
         teleport(turtle, x, y)
         turtle.pencolor("green")
         line(turtle, x, y, x, y + 10)
