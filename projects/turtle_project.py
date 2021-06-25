@@ -1,5 +1,6 @@
 """A program that draws some dudes woth some swords !!"""
 """Break up complex function: line and rectangle."""
+"""I named my turtle after my cat."""
 
 __author__ = "730429363"
 
@@ -86,11 +87,11 @@ def main() -> None:
     dude(soupy, 45, 220)
     soupy.left(90)
     dude(soupy, 200, 220)
-    turtle.fillcolor("gray")
-    turtle.begin_fill()
+    soupy.fillcolor("gray")
+    soupy.begin_fill()
     sword(soupy, 110, 140)
     sword(soupy, 265, 140)
-    turtle.end_fill()
+    soupy.end_fill()
     done()
     return None
 
