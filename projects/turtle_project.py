@@ -57,8 +57,13 @@ def dude(turtle: Turtle, x: float, y: float) -> None:
     line(turtle, x + 30, y - 80, x + 65, y - 150)
     return None
 
+
 def sword(turtle: Turtle, x: float, y: float) -> None:
-    teleport(turtle, x, y)
+    line(turtle, x, y, x + 10, y + 80)
+    line(turtle, x + 4, y - 4, x + 14, y + 76)
+    line(turtle, x, y, x + 4, y - 4)
+    line(turtle, x + 10, y + 80, x + 12, y + 84)
+    line(turtle, x + 14, y + 76, x + 12, y + 84)
     return None
 
 
