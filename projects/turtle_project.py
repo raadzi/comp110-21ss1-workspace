@@ -34,7 +34,9 @@ def line(turtle: Turtle, start_x: float, start_y: float, end_x: float, end_y: fl
     return None
 
 
-def flower (turtle: Turtle, x: float, y: float) -> None:
+def flower (turtle: Turtle) -> None:
+    x = 2.5
+    y = 70
     teleport(x, y)
     while x <= 397.5:
         line(x, y, x, y + 10)
@@ -50,7 +52,7 @@ def ground(turtle: Turtle, x: float, y: float) -> None:
     turtle.begin_fill()
     rectangle(turtle, 400, 70)
     turtle.end_fill()
-    flower(turtle, 2.5, 70)
+    flower(turtle)
     return None
 
 def dude(turtle: Turtle, x: float, y: float) -> None:
