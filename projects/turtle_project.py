@@ -90,7 +90,7 @@ def night(turtle: Turtle, x: float, y: float) -> None:
     turtle.pensize(5)
     turtle.pencolor("white")
     i: int = 0
-    while i <= 40:
+    while i <= 41:
         star_x: int = randint(1, 399)
         star_y: int = randint(71, 399)
         teleport(turtle, star_x, star_y)
