@@ -1,11 +1,34 @@
 """A program that draws some dudes woth some swords !!"""
 """Break up complex function: line and rectangle."""
+"""Methinks that time of day is the other aboe and beyond."""
 """I named my turtle after my cat."""
 
 __author__ = "730429363"
 
 from turtle import Turtle, colormode, done
 colormode(255)
+from random import randint
+
+
+def main() -> None:
+    """The entrypoint of the program, when run as a module."""
+    soupy: Turtle = Turtle()
+    soupy.speed(0)
+    time_of_day: int = randint(0, 1)
+    if time_of_day == 0:
+        day(soupy, 0, 0)
+    else:
+        night(soupy, 0, 0)
+    ground(soupy, 0, 0)
+    flower(soupy, 2.5, 70)
+    soupy.left(90)
+    dude(soupy, 45, 220)
+    soupy.left(90)
+    dude(soupy, 200, 220)
+    sword(soupy, 110, 140)
+    sword(soupy, 265, 140)
+    done()
+    return None
 
 
 def teleport(turtle: Turtle, x: float, y: float) -> None:
@@ -34,6 +57,44 @@ def line(turtle: Turtle, start_x: float, start_y: float, end_x: float, end_y: fl
     return None
 
 
+def day(turtle: Turtle, x: float, y: float) -> None:
+    teleport(turtle, x, y)
+    turtle.pencolor(133, 214, 226)
+    turtle.fillcolor(133, 214, 226)
+    turtle.begin_fill()
+    rectangle(turtle, 400, 400)
+    turtle.pencolor("black")
+    turtle.fillcolor("yellow")
+    teleport(turtle, 100, 350)
+    turtle.begin_fill()
+    rectangle(turtle, 50, 50)
+    turtle.end_fill()
+    return None
+
+
+def night(turtle: Turtle, x: float, y: float) -> None:
+    teleport(turtle, x, y)
+    turtle.pencolor(53, 0, 147)
+    turtle.fillcolor(53, 0, 147)
+    turtle.begin_fill()
+    rectangle(turtle, 400, 400)
+    turtle.pencolor("black")
+    turtle.fillcolor("white")
+    teleport(turtle, 100, 350)
+    turtle.begin_fill()
+    rectangle(turtle, 50, 50)
+    turtle.end_fill()
+    turtle.pensize(5)
+    turtle.pencolor("white")
+    i: int = 0
+    while i <= 40:
+        star_x: int = randint(1, 399)
+        star_y: int = randint(71, 399)
+        teleport(turtle, star_x, star_y)
+        i += 1
+    return None
+
+
 def flower (turtle: Turtle, x: float, y: float) -> None:
     while x <= 397.5:
         teleport(turtle, x, y)
@@ -57,6 +118,7 @@ def ground(turtle: Turtle, x: float, y: float) -> None:
     rectangle(turtle, 400, 70)
     turtle.end_fill()
     return None
+
 
 def dude(turtle: Turtle, x: float, y: float) -> None:
     """Draws a lil dude."""
@@ -84,29 +146,6 @@ def sword(turtle: Turtle, x: float, y: float) -> None:
     line(turtle, x + 10, y + 80, x + 12, y + 84)
     line(turtle, x + 14, y + 76, x + 12, y + 84)
     turtle.end_fill()
-    return None
-
-
-def main() -> None:
-    """The entrypoint of the program, when run as a module."""
-    soupy: Turtle = Turtle()
-    soupy.speed(0)
-    time_of_day = randint(0, 2)
-    if time_of_day == 0:
-        day(turtle, 0, 0)
-    elif time_of_day == 1:
-        sunrise(turtle, 0, 0)
-    else:
-        night(turtle, 0, 0)
-    ground(soupy, 0, 0)
-    flower(soupy, 2.5, 70)
-    soupy.left(90)
-    dude(soupy, 45, 220)
-    soupy.left(90)
-    dude(soupy, 200, 220)
-    sword(soupy, 110, 140)
-    sword(soupy, 265, 140)
-    done()
     return None
 
 
