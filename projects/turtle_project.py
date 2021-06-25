@@ -50,10 +50,9 @@ def dude(turtle: Turtle, x: float, y: float) -> None:
     turtle.begin_fill()
     rectangle(turtle, 60, 60)
     turtle.end_fill()
-    line(turtle, x + 30, y, x + 30, y - 10)
+    line(turtle, x + 30, y, x + 30, y - 80)
     line(turtle, x + 30, y - 10, x - 5, y - 80)
     line(turtle, x + 30, y - 10, x + 65, y - 80)
-    line(turtle, x + 30, y - 10, x + 30, y - 80)
     line(turtle, x + 30, y - 80, x - 5, y - 150)
     line(turtle, x + 30, y - 80, x + 65, y - 150)
     return None
