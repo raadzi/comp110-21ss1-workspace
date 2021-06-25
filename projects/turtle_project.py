@@ -94,6 +94,7 @@ def night(turtle: Turtle, x: float, y: float) -> None:
         star_x: int = randint(1, 399)
         star_y: int = randint(71, 399)
         teleport(turtle, star_x, star_y)
+        rectangle(turtle, 1, 1)
         i += 1
     turtle.pensize(1)
     return None
