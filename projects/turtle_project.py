@@ -77,8 +77,8 @@ def day(turtle: Turtle, x: float, y: float) -> None:
 
 def night(turtle: Turtle, x: float, y: float) -> None:
     teleport(turtle, x, y)
-    turtle.pencolor(53, 0, 147)
-    turtle.fillcolor(53, 0, 147)
+    turtle.pencolor(61, 76, 176)
+    turtle.fillcolor(61, 76, 176)
     turtle.begin_fill()
     rectangle(turtle, 400, 400)
     turtle.end_fill()
@@ -130,6 +130,7 @@ def dude(turtle: Turtle, x: float, y: float) -> None:
     """Draws a lil dude."""
     teleport(turtle, x, y)
     turtle.pencolor("black")
+    turtle.pensize(3)
     turtle.fillcolor(233, 209, 173)
     turtle.begin_fill()
     rectangle(turtle, 60, 60)
@@ -139,6 +140,7 @@ def dude(turtle: Turtle, x: float, y: float) -> None:
     line(turtle, x + 30, y - 10, x + 65, y - 80)
     line(turtle, x + 30, y - 80, x - 5, y - 150)
     line(turtle, x + 30, y - 80, x + 65, y - 150)
+    turtle.pensize(1)
     return None
 
 
