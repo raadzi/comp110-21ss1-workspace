@@ -101,6 +101,7 @@ def triangle_hat(turtle: Turtle, x: float, y: float) -> None:
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
     soupy: Turtle = Turtle()
+    soupy.speed(MAX_SPEED)
     ground(soupy, 0, 0)
     soupy.left(90)
     dude(soupy, 45, 220)
