@@ -60,6 +60,9 @@ def dude(turtle: Turtle, x: float, y: float) -> None:
 
 
 def sword(turtle: Turtle, x: float, y: float) -> None:
+    teleport(turtle, x, y)
+    turtle.fillcolor("gray")
+    turtle.begin_fill()
     line(turtle, x, y, x + 10, y + 80)
     line(turtle, x + 4, y - 4, x + 14, y + 76)
     line(turtle, x, y, x + 4, y - 4)
@@ -87,11 +90,8 @@ def main() -> None:
     dude(soupy, 45, 220)
     soupy.left(90)
     dude(soupy, 200, 220)
-    soupy.fillcolor("gray")
-    soupy.begin_fill()
     sword(soupy, 110, 140)
     sword(soupy, 265, 140)
-    soupy.end_fill()
     done()
     return None
 
