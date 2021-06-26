@@ -13,3 +13,9 @@ file_handle.close()
 
 
 #processing a column of the table to calculate the average perception of pace
+
+##creates a list of percieved paces
+paces: list[float] = []
+for row in table:
+    pace: float = float(row["pace"])
+    paces.append(pace)
