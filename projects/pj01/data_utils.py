@@ -48,3 +48,14 @@ def select(table: dict[str, list[str]], cols: list[str]) -> dict[str, list[str]]
     for col_name in cols:
         result[col_name] = table[col_name]
     return result
+
+
+def count(values: list[str]) -> dict[str, int]:
+    """Counts the number of times a value is present."""
+    counts: dict[str, int] = {}
+    for value in values:
+        if value in counts:
+            counts[value] += 1
+        else:
+            counts[value] = 1
+    return counts
