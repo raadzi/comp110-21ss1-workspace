@@ -54,12 +54,14 @@ def rectangle(turtle: Turtle, horizontal: float, vertical: float) -> None:
 
 
 def line(turtle: Turtle, start_x: float, start_y: float, end_x: float, end_y: float) -> None:
+    """Draws a line."""
     teleport(turtle, start_x, start_y)
     turtle.goto(end_x, end_y)
     return None
 
 
 def day(turtle: Turtle, x: float, y: float) -> None:
+    """Creates the setting during the day."""
     teleport(turtle, x, y)
     turtle.pencolor(133, 214, 226)
     turtle.fillcolor(133, 214, 226)
@@ -76,6 +78,7 @@ def day(turtle: Turtle, x: float, y: float) -> None:
 
 
 def night(turtle: Turtle, x: float, y: float) -> None:
+    """Creates the setting during the night."""
     teleport(turtle, x, y)
     turtle.pencolor(61, 76, 176)
     turtle.fillcolor(61, 76, 176)
@@ -93,6 +96,7 @@ def night(turtle: Turtle, x: float, y: float) -> None:
 
 
 def stars(turtle: Turtle) -> None:
+    """Draws the stars if the night setting is selected."""
     turtle.pensize(5)
     turtle.pencolor("white")
     i: int = 0
@@ -107,6 +111,7 @@ def stars(turtle: Turtle) -> None:
 
 
 def flower (turtle: Turtle, x: float, y: float) -> None:
+    """Draws flowers on the ground."""
     while x <= 197.5:
         teleport(turtle, x, y)
         turtle.pencolor("green")
@@ -149,6 +154,7 @@ def dude(turtle: Turtle, x: float, y: float) -> None:
 
 
 def sword(turtle: Turtle, x: float, y: float) -> None:
+    """Makes swords for the dudes."""
     teleport(turtle, x, y)
     turtle.fillcolor(227, 227, 227)
     turtle.begin_fill()
