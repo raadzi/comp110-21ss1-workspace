@@ -52,7 +52,7 @@ def select(table: dict[str, list[str]], cols: list[str]) -> dict[str, list[str]]
 
 def count(values: list[str]) -> dict[str, int]:
     """Counts the number of times a value is present."""
-    counts: dict[str, int] = []
+    counts: dict[str, int] = {}
     for value in values:
         if value in counts:
             counts[value] += 1
