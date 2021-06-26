@@ -8,7 +8,6 @@ csv_reader = DictReader(file_handle)
 table: list[dict[str, str]] = []
 for row in csv_reader:
     table.append(row)
-print(table)
 file_handle.close()
 
 
